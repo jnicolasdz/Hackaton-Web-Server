@@ -1,0 +1,47 @@
+<template id="task-card-template">
+    <div class="card">
+
+        <!-- Fila superior: meta + badge estado -->
+        <div class="card-header-row">
+            <div class="card-meta">
+                <span class="card-id"></span>
+                <span class="card-difficulty"></span>
+            </div>
+            <button class="btn mark"></button>
+        </div>
+
+        <!-- Título -->
+        <strong class="card-title"></strong>
+
+        <!-- Separador visual -->
+        <div style="height:1px; background: var(--border); margin: 12px 0;"></div>
+
+        <!-- Descripción -->
+        <div class="card-description"></div>
+
+        <!-- Entrada / Salida esperada -->
+        <div class="io-container">
+            <div class="io-block">
+                <span class="io-label">
+                    <span class="io-label-dot" style="background: var(--accent);"></span>
+                    Entrada esperada
+                </span>
+                <code class="io-value input-val card-input"></code>
+            </div>
+            <div class="io-block">
+                <span class="io-label">
+                    <span class="io-label-dot" style="background: var(--done);"></span>
+                    Salida esperada
+                </span>
+                <code class="io-value output-val card-output"></code>
+            </div>
+        </div>
+
+        <!-- Pista -->
+        <div class="hint-container">
+            <button class="btn-hint">💡 Mostrar pista</button>
+            <div class="hint-text"></div>
+        </div>
+
+    </div>
+</template>

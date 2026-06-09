@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hackaton — LPI</title>
+	<link rel="stylesheet" href="./style/client.css">
+</head>
+<body>
+
+	<!-- Modal overlay para tarjeta expandida -->
+	<div id="modal-overlay" class="modal-overlay">
+		<div id="modal-content" class="modal-content" role="dialog" aria-modal="true">
+			<button id="modal-close" class="modal-close" aria-label="Cerrar">✕</button>
+			<div id="modal-body"></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<header>
+			<h1>Hackaton <span class="accent">—</span> LPI</h1>
+			<p class="lead">Explora ejercicios por nivel y consulta los detalles de cada uno.</p>
+			<div class="controls">
+				<button class="pill-btn active" data-cat="any">Todos</button>
+				<button class="pill-btn" data-cat="1">Fácil</button>
+				<button class="pill-btn" data-cat="2">Medio</button>
+				<button class="pill-btn" data-cat="3">Difícil</button>
+			</div>
+		</header>
+
+		<!-- Subtítulo de puntos por dificultad -->
+		<p id="points-hint" class="points-hint"></p>
+
+		<div id="list" class="grid">
+			<div class="empty">Cargando ejercicios...</div>
+		</div>
+
+		<footer>
+			Haz clic en una tarjeta para ver todos sus detalles.
+		</footer>
+	</div>
+
+	<script src="./modules/apiResponse.js" defer></script>
+</body>
+</html>
