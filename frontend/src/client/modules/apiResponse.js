@@ -1,4 +1,4 @@
-const apiURL = 'http://127.0.0.1:8001/api/v1/exercises';
+const apiURL = '/api/exercises';
 
 const listEl        = document.getElementById('list');
 const modalOverlay  = document.getElementById('modal-overlay');
